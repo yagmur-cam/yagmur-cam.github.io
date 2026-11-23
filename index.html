@@ -1,36 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yağmur Çam</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <canvas id="bg"></canvas>
 
     <nav>
-        <!-- links to each section: <a href="#about">About</a> ... -->
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <header id="hero">
         <h1>Yağmur Çam</h1>
-        <!-- your one-line description + links -->
-    </header>
+        <p>Applied CS &amp; AI Student @ Sapienza University of Rome, building intelligent systems</p>
 
+        <div>
+            <a href="https://github.com/yagmur-cam" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/ya%C4%9Fmur-%C3%A7am-2860y00/" target="_blank"
+                rel="noopener">LinkedIn</a>
+            <a href="mailto:yagmurcam026@gmail.com">Email</a>
+            <a href="assets/CV.pdf" target="_blank">CV</a>
+        </div>
+    </header>
 
     <main>
         <section id="about">
             <h2>About</h2>
+            <p>I am interested in AI and robotics, anything that could be called intelligent really.
+                That's why AI and machine learning truly captivate me. And it's even better when you give it a body and
+                have a robot
+                in front of you. That's what I would like to work on, a physical entity with a so-called brain that can
+                act on its own.
+                So, I like to be hands-on, in the field and dive deep into whatever I am working on.
+                That's why I am in the navigation department of SASA, Sapienza's rover team.
+                I also have an immense curiosity about the human brain (of course I do, what is more intelligent than
+                that?),
+                hence my side passion for computational neuroscience.</p>
+            <p>Besides all this nerdy stuff, I like to draw and paint. Thus, I see the world of computer science
+                as an incredibly complex and beautiful painting on a high-resolution screen.
+                I intend to detangle all parts of it, and eventually make my own painting and hang it high on this huge
+                screen.</p>
         </section>
 
-         <!-- add: projects, experience (same pattern) -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="assets/tracking.gif" alt="Kalman filter tracking a vehicle">
+                    <h3>Kalman Filter Vehicle Tracking</h3>
+                    <p>Kalman filter tracking a manoeuvring vehicle from noisy, position-only radar;
+                        with tuning, consistency and dropout experiments.</p>
+                    <p class="tags"><span class="tag">Python</span> <span class="tag">Sensor fusion</span></p>
+                    <a href="https://github.com/yagmur-cam/autonomous-vehicle-simulation" target="_blank"
+                        rel="noopener">View on GitHub</a>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/hopfield.png" alt="Hopfield Networks and Attention Mechanism">
+                    <h3>Hopfield Networks &amp; Attention</h3>
+                    <p>From-scratch implementations of classical and modern Hopfield networks, 
+                        verifying that modern retrieval is identical to one step of Transformer attention.
+                    </p>
+                    <p class="tags"><span class="tag">Transformers</span> <span class="tag">Associative memory</span></p>
+                    <a href="https://github.com/yagmur-cam/hopfield-networks-attention" target="_blank"
+                        rel="noopener">View on GitHub</a>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/mars.png" alt="Mars Terrain Segmentation">
+                    <h3>Mars Terrain Segmentation</h3>
+                    <p>Semantic terrain segmentation for Mars rovers on the AI4Mars dataset:
+                        U-Net from scratch vs. pretrained models.</p>
+                    <p class="tags"><span class="tag">PyTorch</span> <span class="tag">Computer vision</span></p>
+                    <a href="https://github.com/yagmur-cam/mars-terrain-segmentation" target="_blank"
+                        rel="noopener">View on GitHub</a>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/cnn.png" alt="CNN Image Classifier">
+                    <h3>Painting Classifier CNN</h3>
+                    <p>A convolutional network in Java/DL4J classifying paintings into 7 art styles,
+                        reaching 51.4% test accuracy on 14.7k cleaned WikiArt images.</p>
+                    <p class="tags"><span class="tag">Java</span> <span class="tag">CNN</span></p>
+                    <a href="https://github.com/yagmur-cam/painting-classifier-cnn" target="_blank" rel="noopener">View
+                        on GitHub</a>
+                </article>
+            </div>
+            <p><strong>Also on GitHub:</strong> 
+                <a href="https://github.com/yagmur-cam/electron-in-em-field" target="_blank" rel="noopener">Electron in an EM Field</a> ·
+                <a href="https://github.com/yagmur-cam/hodgkin-huxley-simulator" target="_blank" rel="noopener">Hodgkin-Huxley Neurons</a> ·
+                <a href="https://github.com/yagmur-cam/neural-plasticity-simulator" target="_blank" rel="noopener">STDP Simulator</a>
+            </p>
+
+
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+        </section>
     </main>
 
     <footer id="contact">
-
     </footer>
 
-
 </body>
+
 </html>
